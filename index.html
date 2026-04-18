@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aman Phadke — ML Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+  <nav>
+    <span class="nav-name">Aman Phadke</span>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">Dark</button>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-tag">ML Engineer &amp; AI Builder</p>
+    <h1>Building things<br>that <span class="think-spotlight"><em class="think-base">think.</em><em class="think-shine" aria-hidden="true">think.</em></span></h1>
+    <p class="hero-desc">
+      AWS Certified Machine Learning Engineer based in Indore, India.
+      I build production AI applications across NLP, multi-agent systems,
+      and computer vision. AMD Slingshot Top 100 Finalist.
+      Open to remote internships.
+    </p>
+    <div class="hero-badges">
+      <span class="badge accent">AWS Certified ML - Specialty</span>
+      <span class="badge">Python</span>
+      <span class="badge">LLMs</span>
+      <span class="badge">NLP</span>
+      <span class="badge">Multi-Agent Systems</span>
+      <span class="badge">Computer Vision</span>
+      <span class="badge">Docker</span>
+    </div>
+  </div>
+
+  <section id="work">
+    <p class="section-label">Experience</p>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <p class="exp-period">Apr 2025 - Jul 2025<br>Bhopal, Hybrid</p>
+      </div>
+      <div>
+        <p class="exp-title">AI Backend Dev Intern</p>
+        <p class="exp-company">Brainware Infosoft LLP</p>
+        <p class="exp-desc">Contributed to IntelliTools, a client-facing AI utility platform. Built a facial analysis module to evaluate candidate confidence from video input using computer vision — deployed as a core production feature.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-meta">
+        <p class="exp-period">May 2024 - Jun 2024<br>Indore</p>
+      </div>
+      <div>
+        <p class="exp-title">Database Intern</p>
+        <p class="exp-company">Epsilon IT Solutions Pvt Ltd</p>
+        <p class="exp-desc">Designed relational schemas for a Student Management System supporting 200+ records. Optimized SQL queries for performance and conducted validation testing with zero data loss.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section-label">Projects</p>
+    <div class="project-filters" aria-label="Filter projects by tech">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="python">Python</button>
+      <button class="filter-btn" data-filter="llm">LLM</button>
+      <button class="filter-btn" data-filter="nlp">NLP</button>
+      <button class="filter-btn" data-filter="ml">ML</button>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card" data-tech="python llm" data-project-id="voice-agent" role="button" tabindex="0" aria-label="Open Voice Controlled AI Agent details">
+        <p class="project-num">01</p>
+        <p class="project-name">Voice Controlled AI Agent</p>
+        <p class="project-desc">Local AI agent with full voice pipeline — audio capture → speech-to-text → intent classification → tool execution → Gradio UI response.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Whisper</span>
+          <span class="tag">Groq API</span>
+          <span class="tag">Gradio</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tech="python llm" data-project-id="autostream-agent" role="button" tabindex="0" aria-label="Open AutoStream Sales Agent details">
+        <p class="project-num">02</p>
+        <p class="project-name">AutoStream Sales Agent</p>
+        <p class="project-desc">Conversational AI agent that qualifies and converts social media leads into CRM-ready output using multi-agent orchestration.</p>
+        <div class="project-stack">
+          <span class="tag">AutoGen</span>
+          <span class="tag">Gemini LLM</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tech="python nlp" data-project-id="lexitrack" role="button" tabindex="0" aria-label="Open LexiTrack details">
+        <p class="project-num">03</p>
+        <p class="project-name">LexiTrack</p>
+        <p class="project-desc">German language proficiency analyzer with custom Language Complexity Index for CEFR level estimation and grammar error detection.</p>
+        <div class="project-stack">
+          <span class="tag">spaCy</span>
+          <span class="tag">HanTa</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Plotly</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tech="python ml" data-project-id="mlops-pipeline" role="button" tabindex="0" aria-label="Open MLOps Batch Pipeline details">
+        <p class="project-num">04</p>
+        <p class="project-name">MLOps Batch Pipeline</p>
+        <p class="project-desc">Reproducible batch job for financial signal processing — loads OHLCV data, computes rolling indicators, and generates trading signals. Dockerized for deployment.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">YAML</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tech="python" data-project-id="binance-bot" role="button" tabindex="0" aria-label="Open Binance Trading Bot details">
+        <p class="project-num">05</p>
+        <p class="project-name">Binance Trading Bot</p>
+        <p class="project-desc">A Python-based trading bot for placing orders on Binance Futures using the REST API.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">REST API</span>
+          <span class="tag">Argparse</span>
+          <span class="tag">HMAC-SHA256</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tech="python nlp" data-project-id="playstore-analytics" role="button" tabindex="0" aria-label="Open Google Playstore Analytics details">
+        <p class="project-num">06</p>
+        <p class="project-name">Google Playstore Analytics</p>
+        <p class="project-desc">Interactive data analysis dashboard exploring 10,000+ apps from the Google Play Store with live visualizations and machine learning insights.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">NLTK</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Business Insight</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-tech="python ml" data-project-id="gymiq" role="button" tabindex="0" aria-label="Open GymIQ details">
+        <p class="project-num">07</p>
+        <p class="project-name">GymIQ</p>
+        <p class="project-desc">Workout intelligence system with fatigue tracking, deload risk prediction and 1RM forecasting. Built for personal use as an active gym goer.</p>
+        <div class="project-stack">
+          <span class="tag">Python</span>
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Sports Analytics</span>
+          <span class="tag">Plotly</span>
+          <span class="tag">Streamlit</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="section-label">Skills</p>
+    <div class="skills-grid">
+      <div>
+        <p class="skill-group-label">Languages</p>
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>SQL (T-SQL, MySQL)</li>
+        </ul>
+      </div>
+      <div>
+        <p class="skill-group-label">ML / AI</p>
+        <ul class="skill-list">
+          <li>Scikit-learn</li>
+          <li>Groq LLM / Whisper</li>
+          <li>AutoGen</li>
+          <li>Pandas / NumPy</li>
+        </ul>
+      </div>
+      <div>
+        <p class="skill-group-label">Mathematics</p>
+        <ul class="skill-list">
+          <li>Probability</li>
+          <li>Statistics</li>
+          <li></li>
+        </ul>
+      </div>
+      <div>
+        <p class="skill-group-label">NLP</p>
+        <ul class="skill-list">
+          <li>spaCy / NLTK / HanTa</li>
+          <li>Sentiment Analysis</li>
+          <li>LLM Integration</li>
+          <li>Dependency Parsing</li>
+        </ul>
+      </div>
+      <div>
+        <p class="skill-group-label">Deployment</p>
+        <ul class="skill-list">
+          <li>Docker</li>
+          <li>Streamlit / Gradio</li>
+          <li>Plotly</li>
+        </ul>
+      </div>
+      <div>
+        <p class="skill-group-label">Certifications</p>
+        <ul class="skill-list">
+          <li>AWS ML - Specialty</li>
+          <li>Harvard - CS50P</li>
+        </ul>
+      </div>
+      <div>
+        <p class="skill-group-label">Education</p>
+        <ul class="skill-list">
+          <li>B.Tech CS & IT</li>
+          <li>IPS Academy, Indore</li>
+          <li>CGPA 8.5 / 10</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <section>
+    <p class="section-label">Achievements</p>
+    <div class="achievement-item">
+      <span class="ach-icon">⬡</span>
+      <div>
+        <p class="ach-title">AMD Slingshot Top 100 - National Finalist</p>
+        <p class="ach-desc">Top 0.5% out of 20,000+ competing teams. Built an AI-powered tactile Braille display with adaptive learning for visually impaired students.</p>
+      </div>
+    </div>
+    <div class="achievement-item">
+      <span class="ach-icon">⬡</span>
+      <div>
+        <p class="ach-title">AWS Certified Machine Learning - Specialty</p>
+        <p class="ach-desc">One of the most respected ML certifications globally. Achieved while still in college, March 2025.</p>
+      </div>
+    </div>
+    <div class="achievement-item">
+      <span class="ach-icon">⬡</span>
+      <div>
+        <p class="ach-title">Technical Blogger on Medium</p>
+        <p class="ach-desc">Writes in-depth articles on AI development, sharing learnings from projects and research with the developer community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-label">Contact</p>
+    <div class="contact-card">
+      <p class="contact-title">Let us build something useful together.</p>
+      <p class="contact-desc">
+        Open to internships, freelance opportunities, and AI collaborations.
+        The fastest way to reach me is by email.
+      </p>
+      <form id="contact-form" class="contact-form">
+        <label class="form-label" for="contact-name">Your Name</label>
+        <input class="form-input" id="contact-name" name="name" type="text" required>
+
+        <label class="form-label" for="contact-email">Your Email</label>
+        <input class="form-input" id="contact-email" name="email" type="email" required>
+
+        <label class="form-label" for="contact-message">Message</label>
+        <textarea class="form-input form-textarea" id="contact-message" name="message" required></textarea>
+
+        <div class="contact-actions">
+          <button class="contact-cta-btn" type="submit">Send Message</button>
+          <a class="contact-mail-link" href="mailto:amanphadke004@gmail.com">Or email directly</a>
+        </div>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-left">amanphadke004@gmail.com · Indore, India</p>
+    <div class="footer-links">
+      <button id="copy-email-btn" class="copy-email-btn" type="button">Copy Email</button>
+      <a href="https://linkedin.com/amanphadke" target="_blank">LinkedIn</a>
+      <a href="https://github.com/AmanPhadke" target="_blank">GitHub</a>
+      <a href="https://medium.com/@amanphadke004" target="_blank">Medium</a>
+    </div>
+  </footer>
+
+</div>
+<div id="project-modal" class="project-modal" aria-hidden="true">
+  <div class="project-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <button id="project-modal-close" class="project-modal-close" type="button" aria-label="Close project details">Close</button>
+    <p id="modal-project-num" class="project-modal-num"></p>
+    <h3 id="modal-project-title" class="project-modal-title"></h3>
+    <p id="modal-project-description" class="project-modal-description"></p>
+    <div id="modal-project-stack" class="project-modal-stack"></div>
+    <div class="project-modal-actions">
+      <a id="modal-project-source" class="project-modal-link" target="_blank" rel="noopener noreferrer">Source Code</a>
+      <a id="modal-project-demo" class="project-modal-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
